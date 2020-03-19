@@ -7,7 +7,7 @@
 
 password = 'a123456'
 n = 3 # 剩餘機會
-while True:
+while n > 0:
 	p = input('請輸入密碼: ')
 	if p == password:
 		print('登入成功!')
@@ -15,5 +15,3 @@ while True:
 	else:
 		n = n - 1
 		print('密碼錯誤! 還有',n,'次機會')
-		if n == 0:
-			break
